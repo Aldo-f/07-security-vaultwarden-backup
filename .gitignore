@@ -1,0 +1,11 @@
+# Secrets — never commit
+.vaultwarden-password.txt
+*.env
+rclone.conf
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
