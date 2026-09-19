@@ -6,6 +6,9 @@ rclone.conf
 # Logs
 *.log
 
+# Graphify output (exclude generated cache)
+graphify-out/cache/
+
 # OS
 .DS_Store
 Thumbs.db

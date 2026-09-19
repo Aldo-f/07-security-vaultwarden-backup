@@ -1,0 +1,75 @@
+{
+  "communities": {
+    "0": [
+      "install",
+      "install_check_prereqs",
+      "install_install_deps",
+      "install_log",
+      "install_setup_cron",
+      "install_sh__entry",
+      "install_test_run"
+    ],
+    "1": [
+      "vaultwarden_backup",
+      "vaultwarden_backup_bw_password",
+      "vaultwarden_backup_log",
+      "vaultwarden_backup_sh__entry"
+    ]
+  },
+  "cohesion": {
+    "0": 0.7142857142857143,
+    "1": 0.6666666666666666
+  },
+  "gods": [
+    {
+      "id": "install_log",
+      "label": "log()",
+      "degree": 6
+    },
+    {
+      "id": "install_sh__entry",
+      "label": "install.sh script",
+      "degree": 6
+    },
+    {
+      "id": "install_check_prereqs",
+      "label": "check_prereqs()",
+      "degree": 3
+    },
+    {
+      "id": "install_install_deps",
+      "label": "install_deps()",
+      "degree": 3
+    },
+    {
+      "id": "install_setup_cron",
+      "label": "setup_cron()",
+      "degree": 3
+    },
+    {
+      "id": "install_test_run",
+      "label": "test_run()",
+      "degree": 3
+    },
+    {
+      "id": "vaultwarden_backup_log",
+      "label": "log()",
+      "degree": 2
+    },
+    {
+      "id": "vaultwarden_backup_sh__entry",
+      "label": "vaultwarden-backup.sh script",
+      "degree": 2
+    },
+    {
+      "id": "vaultwarden_backup_bw_password",
+      "label": "BW_PASSWORD",
+      "degree": 1
+    }
+  ],
+  "surprises": [],
+  "tokens": {
+    "input": 0,
+    "output": 0
+  }
+}

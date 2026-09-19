@@ -1,0 +1,14 @@
+{
+  "install.sh": {
+    "mtime": 1788947378.4815202,
+    "seen": 1789642598.3495848,
+    "ast_hash": "04699503fff5e3ab0bcf3bfeee6fa02d",
+    "semantic_hash": "04699503fff5e3ab0bcf3bfeee6fa02d"
+  },
+  "vaultwarden-backup.sh": {
+    "mtime": 1789218354.6115985,
+    "seen": 1789642598.3495908,
+    "ast_hash": "7f17ad715596a8a73bc833068de51ede",
+    "semantic_hash": "7f17ad715596a8a73bc833068de51ede"
+  }
+}

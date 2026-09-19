@@ -1,0 +1,384 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "id": "install",
+      "label": "install.sh",
+      "_origin": "ast",
+      "community": 0,
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "file"
+      },
+      "norm_label": "install.sh",
+      "source_file": "install.sh",
+      "source_location": "L1"
+    },
+    {
+      "id": "install_check_prereqs",
+      "label": "check_prereqs()",
+      "_origin": "ast",
+      "community": 0,
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_function"
+      },
+      "norm_label": "check_prereqs()",
+      "source_file": "install.sh",
+      "source_location": "L49"
+    },
+    {
+      "id": "install_install_deps",
+      "label": "install_deps()",
+      "_origin": "ast",
+      "community": 0,
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_function"
+      },
+      "norm_label": "install_deps()",
+      "source_file": "install.sh",
+      "source_location": "L14"
+    },
+    {
+      "id": "install_log",
+      "label": "log()",
+      "_origin": "ast",
+      "community": 0,
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_function"
+      },
+      "norm_label": "log()",
+      "source_file": "install.sh",
+      "source_location": "L11"
+    },
+    {
+      "id": "install_setup_cron",
+      "label": "setup_cron()",
+      "_origin": "ast",
+      "community": 0,
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_function"
+      },
+      "norm_label": "setup_cron()",
+      "source_file": "install.sh",
+      "source_location": "L68"
+    },
+    {
+      "id": "install_sh__entry",
+      "label": "install.sh script",
+      "_origin": "ast",
+      "community": 0,
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_entrypoint"
+      },
+      "norm_label": "install.sh script",
+      "source_file": "install.sh",
+      "source_location": "L1"
+    },
+    {
+      "id": "install_test_run",
+      "label": "test_run()",
+      "_origin": "ast",
+      "community": 0,
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_function"
+      },
+      "norm_label": "test_run()",
+      "source_file": "install.sh",
+      "source_location": "L84"
+    },
+    {
+      "id": "vaultwarden_backup",
+      "label": "vaultwarden-backup.sh",
+      "_origin": "ast",
+      "community": 1,
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "file"
+      },
+      "norm_label": "vaultwarden-backup.sh",
+      "source_file": "vaultwarden-backup.sh",
+      "source_location": "L1"
+    },
+    {
+      "id": "vaultwarden_backup_bw_password",
+      "label": "BW_PASSWORD",
+      "_origin": "ast",
+      "community": 1,
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "code"
+      },
+      "norm_label": "bw_password",
+      "source_file": "vaultwarden-backup.sh",
+      "source_location": "L30"
+    },
+    {
+      "id": "vaultwarden_backup_log",
+      "label": "log()",
+      "_origin": "ast",
+      "community": 1,
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_function"
+      },
+      "norm_label": "log()",
+      "source_file": "vaultwarden-backup.sh",
+      "source_location": "L19"
+    },
+    {
+      "id": "vaultwarden_backup_sh__entry",
+      "label": "vaultwarden-backup.sh script",
+      "_origin": "ast",
+      "community": 1,
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_entrypoint"
+      },
+      "norm_label": "vaultwarden-backup.sh script",
+      "source_file": "vaultwarden-backup.sh",
+      "source_location": "L1"
+    }
+  ],
+  "links": [
+    {
+      "source": "install_check_prereqs",
+      "target": "install_log",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "install.sh",
+      "source_location": "L51",
+      "weight": 1.0
+    },
+    {
+      "source": "install_install_deps",
+      "target": "install_log",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "install.sh",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "install_setup_cron",
+      "target": "install_log",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "install.sh",
+      "source_location": "L73",
+      "weight": 1.0
+    },
+    {
+      "source": "install_sh__entry",
+      "target": "install_test_run",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "install.sh",
+      "source_location": "L100",
+      "weight": 1.0
+    },
+    {
+      "source": "install_sh__entry",
+      "target": "install_log",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "install.sh",
+      "source_location": "L101",
+      "weight": 1.0
+    },
+    {
+      "source": "install_sh__entry",
+      "target": "install_install_deps",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "install.sh",
+      "source_location": "L97",
+      "weight": 1.0
+    },
+    {
+      "source": "install_sh__entry",
+      "target": "install_check_prereqs",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "install.sh",
+      "source_location": "L98",
+      "weight": 1.0
+    },
+    {
+      "source": "install_sh__entry",
+      "target": "install_setup_cron",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "install.sh",
+      "source_location": "L99",
+      "weight": 1.0
+    },
+    {
+      "source": "install_test_run",
+      "target": "install_log",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "install.sh",
+      "source_location": "L86",
+      "weight": 1.0
+    },
+    {
+      "source": "vaultwarden_backup_sh__entry",
+      "target": "vaultwarden_backup_log",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "vaultwarden-backup.sh",
+      "source_location": "L22",
+      "weight": 1.0
+    },
+    {
+      "source": "install",
+      "target": "install_sh__entry",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "install.sh",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "vaultwarden_backup",
+      "target": "vaultwarden_backup_sh__entry",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "vaultwarden-backup.sh",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "install",
+      "target": "install_log",
+      "relation": "defines",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "install.sh",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "install",
+      "target": "install_install_deps",
+      "relation": "defines",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "install.sh",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "install",
+      "target": "install_check_prereqs",
+      "relation": "defines",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "install.sh",
+      "source_location": "L49",
+      "weight": 1.0
+    },
+    {
+      "source": "install",
+      "target": "install_setup_cron",
+      "relation": "defines",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "install.sh",
+      "source_location": "L68",
+      "weight": 1.0
+    },
+    {
+      "source": "install",
+      "target": "install_test_run",
+      "relation": "defines",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "install.sh",
+      "source_location": "L84",
+      "weight": 1.0
+    },
+    {
+      "source": "vaultwarden_backup",
+      "target": "vaultwarden_backup_log",
+      "relation": "defines",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "vaultwarden-backup.sh",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "vaultwarden_backup",
+      "target": "vaultwarden_backup_bw_password",
+      "relation": "defines",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "vaultwarden-backup.sh",
+      "source_location": "L30",
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [],
+  "built_at_commit": "13ff28d3c7c7db0dbd9771690dbf0404950fdb11"
+}
